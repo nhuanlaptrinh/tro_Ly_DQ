@@ -144,7 +144,7 @@ def main():
         st.markdown(f'<div class="user">{prompt}</div>', unsafe_allow_html=True)
         
         # Gửi yêu cầu đến LLM và nhận phản hồi
-        with st.spinner("Đang chờ phản hồi từ AI..."):
+        with st.spinner("Đang gõ văn bản..."):
             llm_response, image_url = send_message_to_llm(st.session_state.session_id, prompt)
     
         # Kiểm tra nếu phản hồi không phải lỗi
